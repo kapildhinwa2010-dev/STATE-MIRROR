@@ -24,8 +24,8 @@ import numpy as np
 from state_mirror.mirror import mirror_report
 
 # states_a / states_b: list of (T, D) arrays, one per layer
-states_a = [np.load(f) for f in sorted(glob("run_a/layer_*.npy"))]
-states_b = [np.load(f) for f in sorted(glob("run_b/layer_*.npy"))]
+states_a = [np.load(f) for f in ["run_a_l0.npy", "run_a_l1.npy", "run_a_l2.npy"]]
+states_b = [np.load(f) for f in ["run_b_l0.npy", "run_b_l1.npy", "run_b_l2.npy"]]
 report = mirror_report(states_a, states_b, threshold=0.9)
 print(report["first_divergence_layer"], report["max_delta_layer"])
 ```
