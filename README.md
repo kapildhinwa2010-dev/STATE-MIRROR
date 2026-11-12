@@ -1,5 +1,7 @@
 # STATE-MIRROR
 
+[![Stars](https://img.shields.io/github/stars/kapildhinwa2010-dev/STATE-MIRROR?style=flat-square)](https://github.com/kapildhinwa2010-dev/STATE-MIRROR/stargazers) [![Forks](https://img.shields.io/github/forks/kapildhinwa2010-dev/STATE-MIRROR?style=flat-square)](https://github.com/kapildhinwa2010-dev/STATE-MIRROR/network/members) [![Issues](https://img.shields.io/github/issues/kapildhinwa2010-dev/STATE-MIRROR?style=flat-square)](https://github.com/kapildhinwa2010-dev/STATE-MIRROR/issues) [![Top language](https://img.shields.io/github/languages/top/kapildhinwa2010-dev/STATE-MIRROR?style=flat-square)](https://github.com/kapildhinwa2010-dev/STATE-MIRROR)
+
 Watch where two nearly identical prompts start to differ inside a model.
 
 STATE-MIRROR takes the per-layer hidden states of twin prompts (same text, one token changed) and reports the mean token cosine and the L2 distance per layer, the first layer where the states diverge beyond a threshold, and the layer with the largest change.
